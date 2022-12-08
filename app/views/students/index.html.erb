@@ -1,0 +1,32 @@
+<div class= "container">
+    <h1> Student Data Listing Page </h1>
+
+
+
+<%= link_to "New student", new_student_path, class: "btn btn-primary" %>
+
+<table>
+    <thead>
+    <tr> 
+        <th> Name </th>
+        <th> Roll </th>
+        <th> Email </th>
+        <th> Docs </th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <% @students.each do |student| %>
+        <tr>
+        <td> <%= student.name %> </td>
+        <td> <%= student.roll %> </td>
+        <td> <%= student.email %> </td>
+        <td><%= link_to "Download Student", student.docs_url %></td>
+        <td><%= button_to "Delete",  student, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{student.name}?" %> </td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>
+</div>
+
+
