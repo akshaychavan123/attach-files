@@ -72,6 +72,22 @@ GEM
       sshkit (>= 1.6.1, != 1.7.0)
     autoprefixer-rails (10.4.7.0)
       execjs (~> 2)
+    aws-eventstream (1.2.0)
+    aws-partitions (1.798.0)
+    aws-sdk-core (3.180.1)
+      aws-eventstream (~> 1, >= 1.0.2)
+      aws-partitions (~> 1, >= 1.651.0)
+      aws-sigv4 (~> 1.5)
+      jmespath (~> 1, >= 1.6.1)
+    aws-sdk-kms (1.71.0)
+      aws-sdk-core (~> 3, >= 3.177.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-s3 (1.132.0)
+      aws-sdk-core (~> 3, >= 3.179.0)
+      aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.6)
+    aws-sigv4 (1.6.0)
+      aws-eventstream (~> 1, >= 1.0.2)
     bindex (0.8.1)
     bootsnap (1.15.0)
       msgpack (~> 1.2)
@@ -84,6 +100,21 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
+<<<<<<< HEAD
+=======
+    capistrano-bundler (2.1.0)
+      capistrano (~> 3.1)
+    capistrano-rails (1.6.3)
+      capistrano (~> 3.1)
+      capistrano-bundler (>= 1.1, < 3)
+    capistrano-rvm (0.1.2)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
+    capistrano3-puma (5.2.0)
+      capistrano (~> 3.7)
+      capistrano-bundler
+      puma (>= 4.0, < 6.0)
+>>>>>>> 1e6df2d08bb10d20fb0b31be7ac171b7e48ba287
     capybara (3.38.0)
       addressable
       matrix
@@ -126,6 +157,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jmespath (1.6.2)
     loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -253,9 +285,17 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  aws-sdk-s3
   bootsnap
   bootstrap-sass
   capistrano
+<<<<<<< HEAD
+=======
+  capistrano-bundler
+  capistrano-rails
+  capistrano-rvm
+  capistrano3-puma
+>>>>>>> 1e6df2d08bb10d20fb0b31be7ac171b7e48ba287
   capybara
   carrierwave
   debug
