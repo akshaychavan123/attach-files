@@ -286,13 +286,10 @@ DEPENDENCIES
   bootsnap
   bootstrap-sass
   capistrano
-<<<<<<< HEAD
-=======
   capistrano-bundler
   capistrano-rails
   capistrano-rvm
   capistrano3-puma
->>>>>>> 1e6df2d08bb10d20fb0b31be7ac171b7e48ba287
   capybara
   carrierwave
   debug
