@@ -16,15 +16,15 @@
     </tr>
     </thead>
     <tbody>
-    <% @students.each do |student| %>
-        <tr>
-        <td> <%= student.name %> </td>
-        <td> <%= student.roll %> </td>
-        <td> <%= student.email %> </td>
-        <td><%= link_to "Download Student", student.docs_url %></td>
-        <td><%= button_to "Delete",  student, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{student.name}?" %> </td>
-        </tr>
-    <% end %>
+    # <% @students.each do |student| %>
+    #     <tr>
+    #     <td> <%= student.name %> </td>
+    #     <td> <%= student.roll %> </td>
+    #     <td> <%= student.email %> </td>
+    #     <td><%= link_to "Download Student", student.docs_url %></td>
+    #     <td><%= button_to "Delete",  student, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{student.name}?" %> </td>
+    #     </tr>
+    # <% end %>
     </tbody>
 </table>
 </div>
