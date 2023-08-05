@@ -100,8 +100,6 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
-<<<<<<< HEAD
-=======
     capistrano-bundler (2.1.0)
       capistrano (~> 3.1)
     capistrano-rails (1.6.3)
@@ -114,7 +112,6 @@ GEM
       capistrano (~> 3.7)
       capistrano-bundler
       puma (>= 4.0, < 6.0)
->>>>>>> 1e6df2d08bb10d20fb0b31be7ac171b7e48ba287
     capybara (3.38.0)
       addressable
       matrix
